@@ -1,0 +1,11 @@
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Release\CatswordsTab.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Release\CatswordsTab.pdb
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Release\SharpShell.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Release\SharpShell.xml
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.csprojAssemblyReference.cache
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.CatswordsTabPage.resources
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.csproj.GenerateResource.cache
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.csproj.CoreCompileInputs.cache
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.csproj.CopyComplete
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Release\CatswordsTab.pdb
