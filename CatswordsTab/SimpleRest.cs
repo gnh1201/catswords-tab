@@ -9,6 +9,7 @@ namespace CatswordsTab
 {
     class SimpleRest
     {
+        // reference: http://www.csharpstudy.com/web/article/16-HttpWebRequest-%ED%99%9C%EC%9A%A9
         public string Get(string url)
         {
             string responseText = string.Empty;
@@ -16,6 +17,7 @@ namespace CatswordsTab
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.Timeout = 30 * 1000;
+            request.UserAgent = "AppName=CatswordsTab;Version=1.0";
 
             using (HttpWebResponse resp = (HttpWebResponse)request.GetResponse())
             {
@@ -38,6 +40,8 @@ namespace CatswordsTab
             request.Method = "POST";
             request.ContentType = "application/json";
             request.Timeout = 30 * 1000;
+            request.UserAgent = "AppName=CatswordsTab;Version=1.0";
+            //request.Headers.Add("Authorization", "BASIC SGVsbG8=");
 
             // POST할 데이타를 Request Stream에 쓴다
             byte[] bytes = Encoding.ASCII.GetBytes(data);

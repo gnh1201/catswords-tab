@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +39,9 @@
     <AssemblyOriginatorKeyFile>MyKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SharpShell, Version=2.7.1.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpShell.2.7.1\lib\net40-client\SharpShell.dll</HintPath>
     </Reference>
@@ -51,7 +56,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatswordsTabHelper.cs" />
     <Compile Include="CatswordsTabSheet.cs" />
+    <Compile Include="CatswordsTabAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatswordsTabAuth.Designer.cs">
+      <DependentUpon>CatswordsTabAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatswordsTabWriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatswordsTabWriter.Designer.cs">
+      <DependentUpon>CatswordsTabWriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SimpleRest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CatswordsTabPage.cs">
@@ -66,9 +89,49 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CatswordsTabAuth.resx">
+      <DependentUpon>CatswordsTabAuth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CatswordsTabPage.resx">
       <DependentUpon>CatswordsTabPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CatswordsTabWriter.resx">
+      <DependentUpon>CatswordsTabWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagePassword-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagePassword2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageNotify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagePencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-check-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-dialogue-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-pencli-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-login-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-pencli-321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

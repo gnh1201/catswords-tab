@@ -1,0 +1,17 @@
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\CatswordsTab.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\CatswordsTab.pdb
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\SharpShell.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\SharpShell.xml
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.csprojAssemblyReference.cache
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.CatswordsTabPage.resources
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.csproj.GenerateResource.cache
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.csproj.CoreCompileInputs.cache
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.csproj.CopyComplete
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.pdb
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.CatswordsTabAuth.resources
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\Newtonsoft.Json.dll
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\bin\Debug\Newtonsoft.Json.xml
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.CatswordsTabWriter.resources
+C:\Users\knh94\projects\CatswordsTab\CatswordsTab\obj\Debug\CatswordsTab.Properties.Resources.resources

@@ -28,47 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAuth = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.txtTerminal = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // btnAuth
             // 
-            this.textBox1.AcceptsReturn = true;
-            this.textBox1.Location = new System.Drawing.Point(18, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 325);
-            this.textBox1.TabIndex = 0;
+            this.btnAuth.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnAuth.FlatAppearance.BorderSize = 0;
+            this.btnAuth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuth.Font = new System.Drawing.Font("맑은 고딕", 12F);
+            this.btnAuth.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnAuth.Image = global::CatswordsTab.Properties.Resources.IconLogin32;
+            this.btnAuth.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnAuth.Location = new System.Drawing.Point(254, 25);
+            this.btnAuth.Name = "btnAuth";
+            this.btnAuth.Size = new System.Drawing.Size(127, 40);
+            this.btnAuth.TabIndex = 0;
+            this.btnAuth.Text = "btnAuth";
+            this.btnAuth.UseVisualStyleBackColor = false;
+            this.btnAuth.Click += new System.EventHandler(this.btnAuth_Click);
             // 
-            // textBox2
+            // btnAdd
             // 
-            this.textBox2.Location = new System.Drawing.Point(18, 351);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 54);
-            this.textBox2.TabIndex = 1;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("맑은 고딕", 12F);
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnAdd.Image = global::CatswordsTab.Properties.Resources.IconPencli32;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnAdd.Location = new System.Drawing.Point(254, 73);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(127, 40);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "btnAdd";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button1
+            // labelTitle
             // 
-            this.button1.Location = new System.Drawing.Point(274, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 54);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.BackColor = System.Drawing.Color.Transparent;
+            this.labelTitle.Font = new System.Drawing.Font("맑은 고딕", 20F);
+            this.labelTitle.Location = new System.Drawing.Point(74, 55);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(126, 37);
+            this.labelTitle.TabIndex = 2;
+            this.labelTitle.Text = "labelTitle";
+            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
+            // 
+            // txtTerminal
+            // 
+            this.txtTerminal.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.txtTerminal.Location = new System.Drawing.Point(15, 122);
+            this.txtTerminal.Multiline = true;
+            this.txtTerminal.Name = "txtTerminal";
+            this.txtTerminal.Size = new System.Drawing.Size(366, 335);
+            this.txtTerminal.TabIndex = 3;
             // 
             // CatswordsTabPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.BackgroundImage = global::CatswordsTab.Properties.Resources.IconDialogue128;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.txtTerminal);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnAuth);
             this.Name = "CatswordsTabPage";
-            this.Size = new System.Drawing.Size(396, 427);
+            this.Size = new System.Drawing.Size(396, 500);
+            this.Load += new System.EventHandler(this.CatswordsTabPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,8 +110,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAuth;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.TextBox txtTerminal;
     }
 }
